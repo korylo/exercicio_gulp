@@ -1,0 +1,5 @@
+@use "mixins" as *;
+
+.element {
+  @include bg-images("Gaviao.jpg");
+}

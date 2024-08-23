@@ -2,12 +2,16 @@ const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
 
 // Tarefa para compilar Sass para CSS
-gulp.task("sass", function () {
+function compilaSass() {
   return gulp
-    .src("sass/**/*.scss") // Caminho dos arquivos Sass
-    .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest("css")); // Destino dos arquivos CSS
-});
+    .src("./sass/**/*.scss")
+    .pipe(
+      sass({
+        outputStyle: "compressed",
+      })
+    )
+    .pipe(gulp.dest("./builld/styles"));
+}
 
 // Tarefa padrão que compila Sass e observa alterações
 gulp.task("default", function () {
