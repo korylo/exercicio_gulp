@@ -105,7 +105,8 @@
 * .galery #card-1:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Gaviao.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/Gaviao.jpg");
 }
 * .galery #card-2 {
   background-image: url("../images/borboleta.jpg");
@@ -118,7 +119,8 @@
 * .galery #card-2:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/borboleta.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/borboleta.jpg");
 }
 * .galery #card-3 {
   background-image: url("../images/patos.jpg");
@@ -131,7 +133,8 @@
 * .galery #card-3:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/patos.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/patos.jpg");
 }
 * .galery #card-4 {
   background-image: url("../images/flores.jpg");
@@ -144,7 +147,8 @@
 * .galery #card-4:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/flores.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/flores.jpg");
 }
 * .galery #card-5 {
   background-image: url("../images/dolares.jpg");
@@ -157,7 +161,8 @@
 * .galery #card-5:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/dolares.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/dolares.jpg");
 }
 * .galery #card-6 {
   background-image: url("../images/sem destino.jpg");
@@ -170,7 +175,8 @@
 * .galery #card-6:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/sem destino.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/sem destino.jpg");
 }
 * .galery #card-7 {
   background-image: url("../images/balao.jpg");
@@ -183,7 +189,8 @@
 * .galery #card-7:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/balao.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/balao.jpg");
 }
 * .galery #card-8 {
   background-image: url("../images/navio pirata.jpg");
@@ -196,7 +203,8 @@
 * .galery #card-8:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/navio pirata.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/navio pirata.jpg");
 }
 * .galery #card-9 {
   background-image: url("../images/cavera.jpg");
@@ -209,14 +217,15 @@
 * .galery #card-9:hover {
   background-size: 110%;
   filter: grayscale(0%);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/cavera.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/cavera.jpg");
 }
 * footer {
   text-align: center;
   padding-bottom: 2rem;
 }
 * footer span {
-  font-waight: bold;
+  font-weight: bold;
   color: #20c997;
 }
 

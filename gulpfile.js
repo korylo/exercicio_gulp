@@ -1,21 +1,27 @@
+// Importa os módulos necessários
 const gulp = require("gulp");
 const uglify = require("gulp-uglify");
 const imagemin = require("gulp-imagemin");
 
-// Caminho para os arquivos de JavaScript
-const jsSources = "src/js/**/*.js";
-// Caminho para os arquivos de imagem
-const imgSources = "src/images/**/*";
+// Define a tarefa de minificação de JavaScript
+function minifyJs() {
+  return gulp
+    .src("src/js/**/*.js") // Caminho para os arquivos JavaScript
+    .pipe(uglify()) // Minifica os arquivos JavaScript
+    .pipe(gulp.dest("dist/js")); // Diretório de destino para os arquivos minificados
+}
 
-// Tarefa para minificar arquivos JavaScript
-gulp.task("minify-js", function () {
-  return gulp.src(jsSources).pipe(uglify()).pipe(gulp.dest("dist/js"));
-});
+// Define a tarefa de compressão de imagens
+function compressImages() {
+  return gulp
+    .src("src/images/**/*") // Caminho para os arquivos de imagem
+    .pipe(imagemin()) // Comprime as imagens
+    .pipe(gulp.dest("dist/images")); // Diretório de destino para as imagens comprimidas
+}
 
-// Tarefa para compressão de imagens
-gulp.task("compress-images", function () {
-  return gulp.src(imgSources).pipe(imagemin()).pipe(gulp.dest("dist/images"));
-});
+// Exporta as tarefas para serem usadas individualmente
+exports.minifyJs = minifyJs;
+exports.compressImages = compressImages;
 
-// Tarefa padrão que executa todas as tarefas
-gulp.task("default", gulp.series("minify-js", "compress-images"));
+// Define a tarefa padrão que executa ambas as tarefas em série
+exports.default = gulp.series(minifyJs, compressImages);
