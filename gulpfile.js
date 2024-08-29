@@ -1,19 +1,21 @@
 const gulp = require("gulp");
-const sass = require("gulp-sass")(require("sass"));
+const uglify = require("gulp-uglify");
+const imagemin = require("gulp-imagemin");
 
-// Tarefa para compilar Sass para CSS
-function compilaSass() {
-  return gulp
-    .src("./sass/**/*.scss")
-    .pipe(
-      sass({
-        outputStyle: "compressed",
-      })
-    )
-    .pipe(gulp.dest("./builld/styles"));
-}
+// Caminho para os arquivos de JavaScript
+const jsSources = "src/js/**/*.js";
+// Caminho para os arquivos de imagem
+const imgSources = "src/images/**/*";
 
-// Tarefa padrão que compila Sass e observa alterações
-gulp.task("default", function () {
-  gulp.watch("sass/**/*.scss", gulp.series("sass"));
+// Tarefa para minificar arquivos JavaScript
+gulp.task("minify-js", function () {
+  return gulp.src(jsSources).pipe(uglify()).pipe(gulp.dest("dist/js"));
 });
+
+// Tarefa para compressão de imagens
+gulp.task("compress-images", function () {
+  return gulp.src(imgSources).pipe(imagemin()).pipe(gulp.dest("dist/images"));
+});
+
+// Tarefa padrão que executa todas as tarefas
+gulp.task("default", gulp.series("minify-js", "compress-images"));

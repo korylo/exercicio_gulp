@@ -1,4 +1,6 @@
-@use "mixins" as *;
+// Importa o arquivo _mixins.scss
+@import 'mixins';
+
 
 .element {
   @include bg-images("Gaviao.jpg");

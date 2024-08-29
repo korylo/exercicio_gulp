@@ -1,7 +1,6 @@
 @mixin bg-images($image) {
   background-image: url($image);
 }
-@use "mixins" as *;
 
 .element {
   @include bg-images("Gaviao.jpg");
